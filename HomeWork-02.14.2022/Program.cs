@@ -79,31 +79,45 @@ namespace HomeWork_02._14._2022
             #endregion
 
             #region Method task1
-            //CheckNumberinDivide();
+            CheckNumberinDivide();
             #endregion
 
             #region Method task2
-            MathProcess();
+            //MathProcess();
             #endregion
         }
 
         #region Medhod task1
 
-        //public static void CheckNumberinDivide()
-        //{int num=17;
-        //    if (num % 7 == 0)
-        //    {
-        //        Console.WriteLine("7-ye bolunur") ;
-        //    }
-        //    else
-        //    {
-        //        while (num%7!=0)
-        //        {
-        //            num--;
-        //        }
-        //        Console.WriteLine(num);
-        //    }
-        //}
+        public static void CheckNumberinDivide()
+        {
+            int num =Convert.ToInt32(Console.ReadLine());
+            int x = num % 7;
+            if (num % 7 == 0)
+            {
+                Console.WriteLine("7-ye bolunur");
+            }
+            else
+            {
+                while (x>=4)
+                {
+                    if (num%7==0)
+                    {
+                        Console.WriteLine(num);
+                        break;
+                    }
+                    num++;
+                } while (x<4)
+                {
+                    if (num%7==0)
+                    {
+                        Console.WriteLine(num);
+                        break;
+                    }
+                    num--;
+                }
+            }
+        }
 
         #endregion
 
